@@ -9,7 +9,7 @@ class Comment extends React.Component {
 	static propTypes = {
 		author: React.PropTypes.string,
 		children: React.PropTypes.string
-	}
+	};
 
 	render() {
 		return(
@@ -19,6 +19,7 @@ class Comment extends React.Component {
 				</h2>
 				{this.props.children}
 			</div>
+		);
 	}
 }
 

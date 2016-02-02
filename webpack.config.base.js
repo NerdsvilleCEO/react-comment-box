@@ -3,7 +3,6 @@ var webpack = require('webpack');
 
 module.exports = {
 	entry: {
-		commentBox: './src/CommentBox.jsx'
 	},
     output: { path: __dirname + "/build", filename: '[name].bundle.js' },
 	module: {
@@ -13,7 +12,7 @@ module.exports = {
 				loader: 'babel-loader',
 				exclude: /node_modules/,
 				query: {
-					presets: ['es2015', 'react']
+					presets: ['es2015', 'react', 'stage-0']
 				}
 			}
 		]
